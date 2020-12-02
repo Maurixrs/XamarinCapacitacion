@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCapacitacion.Views.clase2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,20,20,0">
+                <Label Text="Tarea Xamarin Clase 02"
+                       HorizontalOptions="Center"
+                       FontSize="30"/>
+                <Label Text="Ingrese un Número"></Label>
+                <Entry x:Name="entryNumero" Placeholder="Escriba aquí..." Keyboard="Numeric"></Entry>
+                <Button Clicked="Button_Clicked" Text="Listar Números"></Button>
+                <Label Text="Resultado"></Label>
+                <ListView
+                    x:Name="ListaResultado">
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
